@@ -5,6 +5,8 @@ Allows mesh generation from a given parametrisation of a surface/manifold.
 
 Some rendered examples of the generated .obj files (some of them can be found in /out):
 
+A Klein bottle (rendered with Blender):
+![Klein_](https://user-images.githubusercontent.com/80098282/125983125-9538f737-3db1-483c-8ea5-1a3f3a6eb64b.png)
 A Moebius strip:
 ![moeb](https://user-images.githubusercontent.com/80098282/125702241-6d739ab7-56e2-4c67-9e19-88266c3e9129.jpg)
 A catenoid:
