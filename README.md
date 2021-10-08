@@ -5,7 +5,7 @@ Allows mesh generation from a given parametrisation of a surface/manifold.
 
 ## Wireframe rendering
 
-![teapot](https://github.com/fwidmaier/mesh_handler/tree/v2/doc/teapot.mp4)
+![](https://github.com/fwidmaier/mesh_handler/tree/v2/doc/teapot.mp4)
 
 ## Mesh generation
 
