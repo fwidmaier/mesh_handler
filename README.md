@@ -5,7 +5,7 @@ Allows mesh generation from a given parametrisation of a surface/manifold.
 
 ## Wireframe rendering
 
-![](doc/teapot.png)
+![](doc/teapot.png) | ![](doc/teapot.png)
 
 ## Mesh generation
 
