@@ -1,8 +1,9 @@
 from abc import ABC
 from mesh.obj import *
+from linalg import Vector
 
 
-class Vertex:
+class Vertex(Vector):
     """
     A class to model basic properties of a n-dimensional vertex
     """
@@ -10,7 +11,7 @@ class Vertex:
         """
         :param coords: (float) The various coordinates of the vertex
         """
-        self.coords = list(coords)  # stores the coordinates
+        super().__init__(*coords)
         self.id = 0  # stores the line number - to reference it in the OBJ file
 
     @property
@@ -19,7 +20,7 @@ class Vertex:
         :return: (str) Returns the vertex in OBJ-format
         """
         ex = "v"
-        for c in self.coords:
+        for c in self.entries:
             ex += " %.5f" % c  # precision is set to 5 decimal places
         return ex + "\n"
 
@@ -41,6 +42,12 @@ class Face:
         """
         self.vertices = verts
 
+    def __getitem__(self, item):
+        try:
+            return self.vertices[item]
+        except Exception as e:
+            raise e
+
     @property
     def export(self):
         """""
@@ -60,6 +67,16 @@ class Mesh(ABC):
         self.faces = list()  # stores all faces of the mesh
         self.vertices = list()  # stores all vertices of the mesh
         self.name = "Object"
+
+    @property
+    def centroid(self):
+        s = Vector(0, 0, 0)
+        if len(self.vertices) == 0:
+            return s
+
+        for v in self.vertices:
+            s = s + v
+        return s.scale(1/len(self.vertices))
 
     def update(self):
         """
