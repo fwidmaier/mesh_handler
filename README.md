@@ -3,7 +3,7 @@
 Provides some classes and methods for quick mesh generation and writing to .obj files.
 Allows mesh generation from a given parametrisation of a surface/manifold.
 
-Since the second version it also allows the rendering of (simple) wireframes.
+Since the second version it also supports the rendering of (simple) wireframes.
 
 <img src="doc/teapot.png" alt="drawing" width="250"/> <img src="doc/cow.png" alt="drawing" width="250"/> <img src="doc/torus.png" alt="drawing" width="250"/>
 
