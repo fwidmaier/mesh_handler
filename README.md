@@ -5,9 +5,7 @@ Allows mesh generation from a given parametrisation of a surface/manifold.
 
 ## Wireframe rendering
 
-<video width="320" height="240" controls>
-  <source src="mesh_handler/doc/teapot.mp4" type="video/mp4">
-</video>
+![](doc/teapot.png)
 
 ## Mesh generation
 
