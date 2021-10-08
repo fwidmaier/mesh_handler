@@ -1,4 +1,4 @@
-from abc import ABC
+from render import Object
 from mesh.obj import *
 from linalg import Vector
 
@@ -59,11 +59,12 @@ class Face:
         return ex + "\n"
 
 
-class Mesh(ABC):
+class Mesh(Object):
     """
     Models the (abstract) concept of a mesh.
     """
     def __init__(self):
+        super().__init__()
         self.faces = list()  # stores all faces of the mesh
         self.vertices = list()  # stores all vertices of the mesh
         self.name = "Object"
