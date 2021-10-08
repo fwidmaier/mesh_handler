@@ -6,7 +6,7 @@ Allows mesh generation from a given parametrisation of a surface/manifold.
 ## Wireframe rendering
 
 <video width="320" height="240" controls>
-  <source src="https://github.com/fwidmaier/mesh_handler/tree/v2/doc/teapot.mp4" type="video/mp4">
+  <source src="https://github.com/fwidmaier/mesh_handler/blob/v2/doc/teapot.mp4" type="video/mp4">
 </video>
 
 ## Mesh generation
