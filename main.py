@@ -1,5 +1,6 @@
 from mesh.objects.parameterized import *
 from mesh.objects import *
+from mesh.obj import OBJFile
 
 # writing out all possible objects:
 OBJFile.write("out/plane.obj", Plane())
