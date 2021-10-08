@@ -86,6 +86,20 @@ class Mesh(Object):
         for i, v in enumerate(self.vertices):
             v.id = i + 1
 
+    def conf_lines(self):
+        # configure lines for rendering
+        aline = lambda id1, id2: self.addLine(face[id1], face[id2])
+        for face in self.faces:
+            if len(face.vertices) == 3:
+                aline(0, 1)
+                aline(1, 2)
+                aline(2, 0)
+            elif len(face.vertices) == 4:
+                aline(0, 1)
+                aline(1, 2)
+                aline(2, 3)
+                aline(3, 0)
+
     def translate(self, vec):  # vec is just an array of floats
         """
         just for development purposes

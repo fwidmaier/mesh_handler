@@ -61,23 +61,12 @@ class OBJFile:
             raise e
 
         # scale down
-
         mm = max([v.mag for v in m.vertices])
         for i in range(len(m.vertices)):
             m.vertices[i] = m.vertices[i].scale(1/mm)
 
         # configure lines for rendering
-        aline = lambda id1, id2: m.addLine(face[id1], face[id2])
-        for face in m.faces:
-            if len(face.vertices) == 3:
-                aline(0, 1)
-                aline(1, 2)
-                aline(2, 0)
-            elif len(face.vertices) == 4:
-                aline(0, 1)
-                aline(1, 2)
-                aline(2, 3)
-                aline(3, 0)
+        m.conf_lines()
 
         print(f"Successfully read {filename} ({len(m.vertices)} vertices, {len(m.faces)} faces)")
         print(f"{len(m.lines)} lines to draw")
