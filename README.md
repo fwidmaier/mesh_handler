@@ -3,9 +3,29 @@
 Provides some classes and methods for quick mesh generation and writing to .obj files.
 Allows mesh generation from a given parametrisation of a surface/manifold.
 
+Since the second version it also allows the rendering of (simple) wireframes.
+
 ## Wireframe rendering
 
 ![](doc/teapot.png) | ![](doc/cow.png)
+
+### Example code
+
+```python
+from mesh.obj import OBJFile
+from render.scene import *
+
+scene = Scene(500, 500)  # specifying the width and height of the scene (in px)
+apple = OBJFile.read("out/apple.obj", axis="xyz")
+scene.addObject(apple)
+
+scene.render()
+scene.im.show()
+```
+
+The code above will generate the following image:
+
+![](doc/apple.png)
 
 ## Mesh generation
 
