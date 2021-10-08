@@ -1,5 +1,4 @@
 from render import Object
-from mesh.obj import *
 from linalg import Vector
 
 

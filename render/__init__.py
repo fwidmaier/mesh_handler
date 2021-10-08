@@ -51,7 +51,7 @@ class Camera:
         x = w * self.right
         y = w * self.up
         c = (2.5 * self.zoom) / (d + 0.0001)
-        return Vector(x, y).scale(c).scale(2)
+        return Vector(x, y).scale(c)
 
 
 class Object:
