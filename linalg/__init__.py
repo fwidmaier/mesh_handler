@@ -75,6 +75,9 @@ class Vector:
         return Vector(x1, x2, x3)
 
     def rotate_z(self, alpha):
+        """
+        Rotates the Vector around the z-axis
+        """
         c = math.cos(alpha)
         s = math.sin(alpha)
         x = self.x * c - self.y * s
@@ -82,6 +85,9 @@ class Vector:
         return Vector(x, y, self.z)
 
     def rotate_n(self, alpha, n):
+        """
+        Rotates the Vector around a vector n of length 1
+        """
         c = math.cos(alpha)
         s = math.sin(alpha)
         x = (pow(n.x, 2) * (1 - c) + c)*self.x + \
