@@ -3,7 +3,13 @@
 Provides some classes and methods for quick mesh generation and writing to .obj files.
 Allows mesh generation from a given parametrisation of a surface/manifold.
 
-Some rendered examples of the generated .obj files (some of them can be found in /out):
+## Wireframe rendering
+
+![teapot](https://github.com/fwidmaier/mesh_handler/tree/v2/doc/teapot.mp4)
+
+## Mesh generation
+
+Some rendered examples of the generated .obj files (some of them can be found in [out](https://github.com/fwidmaier/mesh_handler/tree/v2/out)):
 
 A Klein bottle - immersed in R^3 (rendered with Blender):
 ![Klein_](https://user-images.githubusercontent.com/80098282/125983125-9538f737-3db1-483c-8ea5-1a3f3a6eb64b.png)
