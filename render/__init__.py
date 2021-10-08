@@ -71,3 +71,4 @@ class Object:
     def draw(self, scene, *args, **kwargs):
         for line in self.lines:
             scene.dLine(self.vertices[line[0]], self.vertices[line[1]], *args, **kwargs)
+            # scene.dLine(line[0], line[1], *args, **kwargs)
