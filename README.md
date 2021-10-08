@@ -25,7 +25,7 @@ app.scene.addObject(torus)
 app.show()
 ```
 
-![](doc/teapot.png) | ![](doc/cow.png)
+| <img src="doc/teapot.png" alt="drawing" width="200"/> | <img src="doc/cow.png" alt="drawing" width="200"/> |
 
 ### Example code
 
