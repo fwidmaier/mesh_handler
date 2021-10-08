@@ -10,7 +10,19 @@ Since the second version it also allows the rendering of (simple) wireframes.
 One may launch the interactive viewer through
 
 ```bash
-python3 wireframe.py out/cube.obj
+python3 wireframe.py out/torus.obj
+```
+
+or by
+
+```python
+from mesh.obj import OBJFile
+from viewer import Viewer
+
+app = Viewer()
+torus = OBJFile.read("out/torus.obj", axis="xyz")
+app.scene.addObject(torus)
+app.show()
 ```
 
 ![](doc/teapot.png) | ![](doc/cow.png)
