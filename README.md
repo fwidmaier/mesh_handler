@@ -11,6 +11,12 @@ Since the second version it also allows the rendering of (simple) wireframes.
 
 ### Example code
 
+One may launch the interactive viewer through
+
+```bash
+python3 wireframe.py out/cube.obj
+```
+
 ```python
 from mesh.obj import OBJFile
 from render.scene import *
